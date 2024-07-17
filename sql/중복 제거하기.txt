@@ -1,0 +1,5 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/59408
+[MySQL]
+제출일 : 2024-07-17
+
+SELECT count(DISTINCT NAME) FROM ANIMAL_INS;
