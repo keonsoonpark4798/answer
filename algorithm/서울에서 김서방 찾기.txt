@@ -1,0 +1,16 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/12919
+[JS]
+제출일 : 2024-07-23
+
+function solution(seoul) {
+    let answer = '';
+    for(let i = 0; i<seoul.length;i++)
+    {
+        if(seoul[i] == 'Kim')
+        {
+            answer = '김서방은 '+ i + '에 있다';
+            break;
+        }
+    }
+    return answer;
+}
