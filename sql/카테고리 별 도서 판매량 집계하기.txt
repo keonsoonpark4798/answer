@@ -1,0 +1,9 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/144855
+[MySQL]
+제출일 : 2024-08-01
+
+SELECT CATEGORY, SUM(SALES) AS TOTAL_SALES
+FROM BOOK join BOOK_SALES using(BOOK_ID)
+WHERE LEFT(SALES_DATE,7) = "2022-01"
+GROUP BY CATEGORY
+ORDER BY CATEGORY ASC;
