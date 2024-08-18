@@ -1,5 +1,0 @@
-https://school.programmers.co.kr/learn/courses/30/lessons/59407
-[MySQL]
-제출일 : 2024-07-15
-
-SELECT ANIMAL_ID FROM ANIMAL_INS WHERE NAME IS NOT NULL;

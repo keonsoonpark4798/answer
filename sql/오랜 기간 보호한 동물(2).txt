@@ -1,7 +1,0 @@
-https://school.programmers.co.kr/learn/courses/30/lessons/59411
-[MySQL]
-제출일 : 2024-08-02
-
-SELECT ANIMAL_ID, t1.NAME
-FROM ANIMAL_INS t1 join ANIMAL_OUTS t2 using(ANIMAL_ID)
-ORDER BY t2.DATETIME - t1.DATETIME DESC LIMIT 2;

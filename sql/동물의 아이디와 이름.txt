@@ -1,5 +1,0 @@
-https://school.programmers.co.kr/learn/courses/30/lessons/59403
-[MySQL]
-제출일 : 2024-07-18
-
-SELECT ANIMAL_ID, NAME FROM ANIMAL_INS ORDER BY ANIMAL_ID;

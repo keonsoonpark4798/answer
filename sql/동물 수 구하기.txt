@@ -1,5 +1,0 @@
-https://school.programmers.co.kr/learn/courses/30/lessons/59406
-[MySQL]
-제출일 : 2024-07-18
-
-SELECT COUNT(*) FROM ANIMAL_INS;
