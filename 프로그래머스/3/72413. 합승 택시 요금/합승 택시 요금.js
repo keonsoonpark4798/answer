@@ -5,24 +5,17 @@ function solution(n, s, a, b, fares) {
     var aStart = dijkstra(graph,a);
     var bStart = dijkstra(graph,b);
     
-    var final = {};
     const allNodes = new Set([...Object.keys(sStart), ...Object.keys(aStart), ...Object.keys(bStart)]);
     allNodes.forEach(node =>{
         let totalWeight = 0;
         
-        if(sStart[node] !== null) totalWeight += sStart[node];
-        if(aStart[node] !== null) totalWeight += aStart[node];
-        if(bStart[node] !== null) totalWeight += bStart[node];
+        if(sStart[node] !== null && aStart[node] !== null & bStart[node] !== null) 
+            totalWeight = sStart[node]+ aStart[node]+ bStart[node];
         
-        if(totalWeight > 0){
-            final[node] = totalWeight;        
+        if(totalWeight < answer){
+            answer = totalWeight;
         }
     })
-    for (let node in final) {
-        if (final[node] < answer) {
-            answer = final[node];
-        }
-    }
     return answer;
 }
 function dijkstra(graph, start){
