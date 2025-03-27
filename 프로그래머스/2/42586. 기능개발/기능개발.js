@@ -1,8 +1,9 @@
 function solution(progresses, speeds) {
     var answer = [];
     var endlist = [];
-    for(index in progresses){
-        endlist.push(Math.ceil((100-progresses[index])/speeds[index]))
+    
+    for (let i = 0; i < progresses.length; i++) {
+    endlist.push(Math.ceil((100 - progresses[i]) / speeds[i]));
     }
     
     while(endlist.length>0){
